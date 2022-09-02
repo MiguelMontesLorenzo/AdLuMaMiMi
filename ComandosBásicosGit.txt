@@ -1,0 +1,44 @@
+Trello
+#################################################################################
+COMANDOS FUNDAMENTALES
+#################################################################################
+
+PARA CLONAR EL REPOSITORIO EN EL PC
+git clone https\\...
+
+REGISTRARSE CON TU USUARIO (NECESARIO PARA COMUNICARSE CON EL REPOSITORIO REMOTO)
+git config --global user.email "tu@email"
+
+ANTES DE EDITAR ARCHIVOS O HILOS DE GIT DESDE TU PC DEBES ASEGURARTE DE QUE LA INFORMACIÓN DEL REPOSITORIO QUE CONTIENE ESTE ESTÁ ACTUALIZADA:
+(navegar hasta el clon del repositorio)
+git pull    (pull significa tirar)
+
+CREAR UNA NUEVA RAMA EN EL REPOSITORIO
+git branch <name>
+
+ENTRAR EN UNA RAMA DEL REPOSITORIO (POR DEFECTO TE ENCUENTRAS EN LA RAMA 'main')
+git checkout <name>
+
+METER UN ARCHIVO EXISTENTE EN EL REPOSITORIO LOCAL (EN EL CLON) EN LA RAMA EN LA QUE TE ENCUENTRAS EN ESE MOMENTO
+(El archivo puede ser cualquiera, pero debe ser creado en el directorio dentro del directorio del repositorio local, en caso contrario, git add no será capaz de encontrar el archivo)
+git add <filename>
+
+GUARDAR LOS CAMBIOS LLEVADOS A CABO EN EL REPOSITORIO LOCAL
+git commit              (guarda todos los cambios efectuados en todas las ramas del repositorio)
+git commit -m <mensaje> (gurada los cambios y deja un mensaje, a ser posible una descripción de lo que se ha guardado)
+
+ACTUALIZAR EL REPOSITORIO REMOTO DE ACUERDO CON TU REPOSITORIO LOCAL (SE ACTUALIZAN LOS CAMBIOS QUE HAN SIDO GUARDADOS)
+git push origin          (actualiza los cambios guardados en todo el repositorio local)
+git push origin <name>	 (actualiza los cambios guardados en la rama <name> del repositorio local)
+
+
+#################################################################################
+COMANDOS SECUNDARIOS
+#################################################################################
+
+INDICA TODAS LAS RAMAS EXISTENTES EN EL REPOSITORIO LOCAL
+git branch
+
+INDICA TODAS LAS RAMAS EXISTENTES EN EL REPOSITORIO REMOTO
+git branch -r
+
